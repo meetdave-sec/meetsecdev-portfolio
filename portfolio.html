@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Dave - Cybersecurity Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <div class="nav-logo"><span>~/</span>meet-dave</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-grid-bg"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-inner">
+        <div class="hero-status">
+          <div class="pulse"></div>
+          Open to entry-level roles · UK
+        </div>
+        <h1>Meet<br /><em>Dave.</em></h1>
+        <p class="hero-subtitle">
+          Cybersecurity Analyst &nbsp;·&nbsp; Blue Team &nbsp;·&nbsp; Cloud
+          Security
+        </p>
+        <p class="hero-summary">
+          MSc Cyber Security (Distinction) graduate with hands-on experience in
+          threat detection, SOC operations, and cloud security. I build real
+          defences - not just theory.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">↓ View Projects</a>
+          <a href="mailto:dmeet2625@gmail.com" class="btn btn-outline"
+            >✉ Get in Touch</a
+          >
+        </div>
+        <div class="terminal-line">
+          <span class="prompt">$</span>
+          <span class="terminal-text">whoami → Cyber-Analyst</span>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <p class="section-label reveal">Capabilities</p>
+        <h2 class="section-title reveal">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <p class="skill-card-label">Security</p>
+            <div class="skill-tags">
+              <span class="tag">SIEM · Splunk/ELK</span>
+              <span class="tag">Threat Detection</span>
+              <span class="tag">Incident Response</span>
+              <span class="tag">MITRE ATT&CK</span>
+              <span class="tag">Vulnerability Assessment</span>
+              <span class="tag">Network Security</span>
+              <span class="tag">OWASP Top 10</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <p class="skill-card-label">Tools</p>
+            <div class="skill-tags">
+              <span class="tag">Wireshark</span>
+              <span class="tag">Nmap</span>
+              <span class="tag">Burp Suite</span>
+              <span class="tag">Metasploit</span>
+              <span class="tag">Sysmon</span>
+              <span class="tag">Zeek</span>
+              <span class="tag">Suricata</span>
+              <span class="tag">Kali Linux</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <p class="skill-card-label">Cloud</p>
+            <div class="skill-tags">
+              <span class="tag">AWS EC2</span>
+              <span class="tag">AWS IAM</span>
+              <span class="tag">AWS VPC</span>
+              <span class="tag">AWS S3</span>
+              <span class="tag">CloudFormation</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+          <div class="skill-card reveal">
+            <p class="skill-card-label">Programming & Networking</p>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Bash</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">TCP/IP</span>
+              <span class="tag">DNS</span>
+              <span class="tag">HTTP/HTTPS</span>
+              <span class="tag">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <p class="section-label reveal">Work</p>
+        <h2 class="section-title reveal">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <p class="project-num">01</p>
+            <h3 class="project-title">SentinelSIEM</h3>
+            <p class="project-desc">
+              Built a full SIEM pipeline simulating real-world SOC operations
+              using Splunk. Ingested logs, created detection rules, developed
+              dashboards, and triggered automated alerts for attacks including
+              SSH brute force and port scanning. End-to-end: attack simulation →
+              incident investigation.
+            </p>
+            <div class="project-footer">
+              <span class="project-type"
+                >SOC · Splunk · Detection Engineering</span
+              >
+              <a
+                href="https://github.com/meetdave-sec/SentinelSIEM-Detection-Engineering-SOC-Simulation-Lab"
+                class="btn btn-outline"
+                style="padding: 0.3rem 0.7rem; font-size: 0.7rem"
+                >→ GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <p class="project-num">02</p>
+            <h3 class="project-title">SentinelWeb</h3>
+            <p class="project-desc">
+              Engineered a vulnerable web application and a hardened counterpart
+              to demonstrate and mitigate OWASP Top 10 vulnerabilities: SQL
+              Injection, XSS, IDOR. Implemented parameterized queries, input
+              sanitization, CSRF protection, and secure session management.
+            </p>
+            <div class="project-footer">
+              <span class="project-type">OWASP · Web Security · Hardening</span>
+              <a
+                href="https://github.com/meetdave-sec/SentinelWeb"
+                class="btn btn-outline"
+                style="padding: 0.3rem 0.7rem; font-size: 0.7rem"
+                >→ GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <p class="project-num">03</p>
+            <h3 class="project-title">SOC Detection Lab</h3>
+            <p class="project-desc">
+              Designed a multi-layered detection lab covering network
+              (Suricata), host (auth logs), and application layers. Detected
+              Nmap scans, SSH brute force via Hydra, and web enumeration with
+              Gobuster — with detailed log analysis and incident reporting.
+            </p>
+            <div class="project-footer">
+              <span class="project-type"
+                >Blue Team · Suricata · Log Analysis</span
+              >
+              <a
+                href="https://github.com/meetdave-sec/SOC-Detection-Lab"
+                class="btn btn-outline"
+                style="padding: 0.3rem 0.7rem; font-size: 0.7rem"
+                >→ GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <p class="project-num">04</p>
+            <h3 class="project-title">SentinelScan</h3>
+            <p class="project-desc">
+              Developed a Python-based rule-driven vulnerability scanner to
+              identify common security weaknesses. Implemented structured
+              scanning logic with severity classification and extensible
+              detection rules for flexible security assessments.
+            </p>
+            <div class="project-footer">
+              <span class="project-type">Python · Vulnerability Scanning</span>
+              <a
+                href="https://github.com/meetdave-sec/SentinelScan"
+                class="btn btn-outline"
+                style="padding: 0.3rem 0.7rem; font-size: 0.7rem"
+                >→ GitHub</a
+              >
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <p class="project-num">05</p>
+            <h3 class="project-title">Password Risk Engine</h3>
+            <p class="project-desc">
+              Built a behavior-driven password analysis tool using entropy
+              modeling, structural pattern detection, and attacker-style
+              heuristics to evaluate real-world password strength — going well
+              beyond basic rule checks to simulate genuine adversarial thinking.
+            </p>
+            <div class="project-footer">
+              <span class="project-type"
+                >Python · Entropy · Threat Modeling</span
+              >
+              <a
+                href="https://github.com/meetdave-sec/Entropy-Based-Password-Risk-Engine"
+                class="btn btn-outline"
+                style="padding: 0.3rem 0.7rem; font-size: 0.7rem"
+                >→ GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTS -->
+    <section class="skills-section" id="education">
+      <div class="container">
+        <p class="section-label reveal">Credentials</p>
+        <h2 class="section-title reveal">Education &amp; Certifications</h2>
+        <div class="edu-certs-grid">
+          <div>
+            <div class="edu-card reveal">
+              <p class="edu-degree">MSc Cyber Security</p>
+              <p class="edu-uni">University of Surrey</p>
+              <span class="edu-grade">Distinction</span>
+            </div>
+            <div class="edu-card reveal" style="margin-top: 1rem">
+              <p class="edu-degree">Bachelor's Degree</p>
+              <p class="edu-uni">Undergraduate Studies</p>
+              <span class="edu-grade">CGPA 8.98 / 10</span>
+            </div>
+          </div>
+          <div>
+            <div class="cert-card reveal">
+              <p class="edu-degree" style="margin-bottom: 0.5rem">
+                CompTIA Security+
+              </p>
+              <div class="cert-badge">
+                ★ Certified &nbsp;·&nbsp; Industry Standard
+              </div>
+              <p
+                style="
+                  font-family: var(--mono);
+                  font-size: 0.78rem;
+                  color: var(--text-dim);
+                  margin-top: 0.75rem;
+                  line-height: 1.6;
+                "
+              >
+                Validates baseline skills required for core security functions
+                and a career in IT security.
+              </p>
+            </div>
+            <div class="achievement-strip reveal">
+              <div class="achievement-item">
+                <span class="ach-icon">🏆</span>SSIP Hackathon Winner
+              </div>
+              <div class="achievement-item">
+                <span class="ach-icon">🎓</span>MSc Distinction
+              </div>
+              <div class="achievement-item">
+                <span class="ach-icon">✅</span>CompTIA Security+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <p class="section-label reveal">Let's talk</p>
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Ready for the right role.</h3>
+            <p>
+              I'm actively looking for entry-level cybersecurity positions in
+              the UK. Whether it's a SOC Analyst role, a cloud security
+              position, or a blue team opportunity — let's connect.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:dmeet2625@gmail.com" class="contact-link">
+                <span class="contact-link-icon">✉</span>
+                dmeet2625@gmail.com
+              </a>
+              <a
+                href="https://www.linkedin.com/in/meet-dave-96288b175"
+                target="_blank"
+                class="contact-link"
+              >
+                <span class="contact-link-icon">in</span>
+                linkedin.com/in/meet-dave-96288b175
+              </a>
+              <a
+                href="https://github.com/meetdave-sec"
+                target="_blank"
+                class="contact-link"
+              >
+                <span class="contact-link-icon">&lt;/&gt;</span>
+                github.com/meetdave-sec
+              </a>
+            </div>
+          </div>
+          <div class="reveal">
+            <div class="availability-card">
+              <div class="pulse-large"></div>
+              <h4>Currently Available</h4>
+              <p>Open to entry-level cybersecurity roles · United Kingdom</p>
+              <div class="focus-tags">
+                <span class="focus-tag">Blue Team Ops</span>
+                <span class="focus-tag">Threat Detection</span>
+                <span class="focus-tag">Cloud Security</span>
+                <span class="focus-tag">SOC Analyst</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 <span>Meet Dave</span> · Cybersecurity Analyst</p>
+      <p
+        style="
+          font-family: var(--mono);
+          font-size: 0.72rem;
+          color: var(--text-dim);
+        "
+      >
+        Built with intention. Secured by design.
+      </p>
+    </footer>
+
+    <script>
+      // Hamburger toggle
+      function toggleNav() {
+        document.getElementById("navLinks").classList.toggle("open");
+      }
+
+      // Close nav on link click (mobile)
+      document.querySelectorAll(".nav-links a").forEach(a => {
+        a.addEventListener("click", () => {
+          document.getElementById("navLinks").classList.remove("open");
+        });
+      });
+
+      // Scroll reveal
+      const reveals = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => entry.target.classList.add("visible"), i * 60);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      reveals.forEach(el => observer.observe(el));
+    </script>
+  </body>
+</html>
